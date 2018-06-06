@@ -4,9 +4,9 @@
 let params = (new URL(document.location)).searchParams;
 let pass = params.get("pass"); //windows93.net?pass="value"
 var sys_pass = "demo" //testing purposes
-if pass = !sys-pass {
+if pass = !sys_pass {
 bootSetup();
-$boot.BIOS.innerHTML = "Incorrect Password " + pass +" !"
+$boot.BIOS.innerHTML = "Incorrect Password"
 }else{
 $alert("login correct");
 }
