@@ -7,10 +7,8 @@ le._path.desktop = "/a/users/" + username + "/desktop/"
 //  le._path.skin = "/a/users/" + username + "/skin/"
 // uncomment above line once/if custom skins for users were implemented
 // IMPORTANT: insert code for settings.json, since i cant figure that out
-  localforage.getItem('/a/users/' + username + '/boot/boot.js').then(function(okthen){
-    eval(okthen) //ok yes this is unsafe, but i will change it later
-    //ok so this boot idea doesnt work yet
-  })
+  console.log($store.getRaw('users/default/boot/boot.js'))
+eval($store.getRaw('users/default/boot/boot.js')) // boot code attempt, probably doesnt work
 }
 
 //DEMO CODE
