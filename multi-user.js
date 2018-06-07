@@ -2,7 +2,7 @@
 function loginUser(username){
 le._path.home = "/a/users/" + username + "/"
 le._path.desktop = "/a/users/" + username + "/desktop/"
- le._settings = JSON.parse($store.get("users/" + username + "/settings.json"))
+// le._settings = JSON.parse($store.get("users/" + username + "/settings.json"))
 }
 function createUser(username){
   localforage.setItem('users/default/settings.json', 'hello world')
